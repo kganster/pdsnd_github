@@ -26,7 +26,7 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     while True:
-        month = input('Would you like to see data for the month of January, February, March, April, May or June? If you would like to see data for all months, type "all" ').lower()
+        month = input('Would you like to see data for the month of January, February, March, April, May or June? To see data for all months, type "all" ').lower()
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         if month !='all' and month not in months:
             print('Invalid month! Please enter one of the full month names listed or "all" ') # specify that user needs to enter one from list
@@ -35,7 +35,7 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input('Please enter a day of the week. If you would like to see data for all days of the week, type "all" ').lower()
+        day = input('Please enter a day of the week. To see data for all days of the week, type "all" ').lower()
         days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
         if day != 'all' and day not in days:
             print('Please enter the full day name or "all" ') # specify that user needs to enter one from list
