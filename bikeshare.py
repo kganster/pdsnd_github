@@ -193,17 +193,12 @@ def birth_yr(df):
 
 def raw_data(df): # define new function to prompt user request for raw data
 
-    n = 0
-    answer = input('Would you like to display the first five rows of data? Enter "yes" or "no" ').lower()
-    pd.set_option('display.max_columns', None)
-
-    while True:
-        if answer == 'no':
-            break
-        print(df[n:n+5])
-        answer = input('Would you like to see five more rows of data? Enter "yes" or "no" ').lower()
-        n += 5
-
+while True:
+    display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+    if display_data.lower() != 'yes':
+        break
+    print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+    i+=5
 
 def main():
     while True:
