@@ -6,7 +6,7 @@ Include the date you created this project and README file.
 ### Explore US Bikeshare Data
 Replace the Project Title
 
-### An exercise to showcase skills learned in Udacity Python course
+### An exercise to showcase skills learned in Udacity Python course. This script enables the user to search bikeshare data by city, month, and other variables and will display raw data as requested by the user.
 Describe what your project is about and what it does
 
 ### chicago, new york city, and washington .csv files
